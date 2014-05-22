@@ -7,11 +7,6 @@ import os
 
 
 def main():
-	f = open('id_chars.txt')
-	chars = []
-	for char in f:
-		chars.append(char)
-	f.close()
 	with open("keywords.txt") as kw:
 		keywords = kw.read().splitlines()
 	id = view_limit(50, keywords)
